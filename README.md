@@ -140,34 +140,34 @@ train.json/
 
 #### Format for test json file
 
-`teston` should follow the following format:
+`test.json` should follow the following format:
 
 ```
 train.json/
     {
-        "categories": [
-            {
-                "id": 1,
-                "name": "Cat",
-            },
-            {
-                "id": 2,
-                "name": "Dog",
-            },
-            ...
-        ],
-        
-        "images": [
-            {
-                "id": 1,
-                "file_name": "00001.jpg",
-            },
-            {
-                "id": 2,
-                "file_name": "00002.jpg",
-            },
-            ...
-        ]
+    .   "categories": [
+    .   .   {
+    .   .       "id": 1,
+    .   .       "name": "Cat",
+    .   .   },
+    .   .   {
+    .   .       "id": 2,
+    .   .       "name": "Dog",
+    .   .   },
+    .   .   ...
+    .   ],
+    .   
+    .   "images": [
+    .   .   {
+    .   .       "id": 1,
+    .   .       "file_name": "00001.jpg",
+    .   .   },
+    .   .   {
+    .   .       "id": 2,
+    .   .       "file_name": "00002.jpg",
+    .   .   },
+    .   .   ...
+    .   ]
     }
 ```
 
