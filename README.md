@@ -55,88 +55,88 @@ test_dataset.zip
         test.json
 ```
 
-#### Format for json files
+#### Format for training and validation json files
 `train.json` and `val.json` should follow the following format:
 
-> Note that this is different from `test.json` [below](#format-for-test-files), `train.json` and `val.json` requires their width and height to be specified under `images`.
+> Note that this is different from `test.json` [below](#format-for-test-files). For `train.json` and `val.json`, we will require image width and height to be specified under `images`. Also, `annotations` are not needed for `test.json`
 
 ```
 train.json/
     {
-        "categories": [
-            {
-                "id": 1,
-                "name": "Cat",
-            },
-            {
-                "id": 2,
-                "name": "Dog",
-            },
-            ...
-        ],
-        
-        "images": [
-            {
-                "id": 1,
-                "width": 1024,
-                "height": 682,
-                "file_name": "00001.jpg",
-            },
-            {
-                "id": 2,
-                "width": 1024,
-                "height": 682,
-                "file_name": "00002.jpg",
-            },
-            ...
-        ],
-        
-        "annotations": [
-            {
-                  "id": 1,
-                  "image_id": 1,
-                  "category_id": 2,
-                  "area": 41990.0,
-                  "bbox": [
-                    42.0,
-                    705.0,
-                    170.0,
-                    247.0
-                  ],
-                  "iscrowd": 0,
-            },
-            {
-                  "id": 2,
-                  "image_id": 1,
-                  "category_id": 2,
-                  "area": 126540.0,
-                  "bbox": [
-                    275.0,
-                    616.0,
-                    380.0,
-                    333.0
-                  ],
-                  "iscrowd": 0,
-            },
-            {
-                  "id": 3,
-                  "image_id": 2,
-                  "category_id": 2,
-                  "area": 474561.0,
-                  "bbox": [
-                    0.0,
-                    236.0,
-                    603.0,
-                    787.0
-                  ],
-                  "iscrowd": 0,
-            },
-            ...
-        ],
+    .   "categories": [
+    .   .   {
+    .   .       "id": 1,
+    .   .       "name": "Cat",
+    .   .   },
+    .   .   {
+    .   .       "id": 2,
+    .   .       "name": "Dog",
+    .   .   },
+    .   .   ...
+    .   ],
+    .   
+    .   "images": [
+    .   .   {
+    .   .       "id": 1,
+    .   .       "width": 1024,
+    .   .       "height": 682,
+    .   .       "file_name": "00001.jpg",
+    .   .   },
+    .   .   {
+    .   .       "id": 2,
+    .   .       "width": 1024,
+    .   .       "height": 682,
+    .   .       "file_name": "00002.jpg",
+    .   .   },
+    .   .   ...
+    .   ],
+    .   
+    .   "annotations": [
+    .   .   {
+    .   .       "id": 1,
+    .   .       "image_id": 1,
+    .   .       "category_id": 2,
+    .   .       "area": 41990.0,
+    .   .       "bbox": [
+    .   .           42.0,
+    .   .           705.0,
+    .   .           170.0,
+    .   .           247.0
+    .   .       ],
+    .   .       "iscrowd": 0,
+    .   .   },
+    .   .   {
+    .   .       "id": 2,
+    .   .       "image_id": 1,
+    .   .       "category_id": 2,
+    .   .       "area": 126540.0,
+    .   .       "bbox": [
+    .   .           275.0,
+    .   .           616.0,
+    .   .           380.0,
+    .   .            333.0
+    .   .       ],
+    .   .       "iscrowd": 0,
+    .   .   },
+    .   .   {
+    .   .       "id": 3,
+    .   .       "image_id": 2,
+    .   .       "category_id": 2,
+    .   .       "area": 474561.0,
+    .   .       "bbox": [
+    .   .           0.0,
+    .   .            236.0,
+    .   .           603.0,
+    .   .           787.0
+    .   .       ],
+    .   .       "iscrowd": 0,
+    .   .   },
+    .   .   ...
+    .   ]
     }
 ```
 
-#### Format for test files
+#### Format for test json file
 
 ```
 train.json/
@@ -163,50 +163,7 @@ train.json/
                 "file_name": "00002.jpg",
             },
             ...
-        ],
-        
-        "annotations": [
-            {
-                  "id": 1,
-                  "image_id": 1,
-                  "category_id": 2,
-                  "area": 41990.0,
-                  "bbox": [
-                    42.0,
-                    705.0,
-                    170.0,
-                    247.0
-                  ],
-                  "iscrowd": 0,
-            },
-            {
-                  "id": 2,
-                  "image_id": 1,
-                  "category_id": 2,
-                  "area": 126540.0,
-                  "bbox": [
-                    275.0,
-                    616.0,
-                    380.0,
-                    333.0
-                  ],
-                  "iscrowd": 0,
-            },
-            {
-                  "id": 3,
-                  "image_id": 2,
-                  "category_id": 2,
-                  "area": 474561.0,
-                  "bbox": [
-                    0.0,
-                    236.0,
-                    603.0,
-                    787.0
-                  ],
-                  "iscrowd": 0,
-            },
-            ...
-        ],
+        ]
     }
 ```
 
