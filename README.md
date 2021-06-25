@@ -14,7 +14,7 @@ Through robust augmentations and hyperparameter tuning, I was able to achieve a 
 - Visit the [repository](https://github.com/raythx98/Object-Detection)
 - Click on `Objection Detection.ipynb`
 - Click on the download button
-- 
+
 ### Upload the Jupyter Notebook
 - Upload the Jupyter Notebook to your google drive
 - Note: `/content/drive/MyDrive` is your google drive home directory
