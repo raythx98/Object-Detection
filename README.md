@@ -35,7 +35,7 @@ Through robust augmentations and hyperparameter tuning, I was able to achieve a 
 Your datasets `training_dataset.zip` and `test_dataset.zip` should follow the following format:
 
 ```
-training_dataset.zip
+training_dataset.zip/
     training_dataset/
         images/
             00001.jpg
@@ -45,7 +45,7 @@ training_dataset.zip
         train.json
         val.json
   
-test_dataset.zip  
+test_dataset.zip/
     test_dataset/
         images/
             00001.jpg
