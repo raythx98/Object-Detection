@@ -58,7 +58,9 @@ test_dataset.zip
 #### Format for training and validation json files
 `train.json` and `val.json` should follow the following format:
 
-> Note that this is different from `test.json` [below](#format-for-test-files). For `train.json` and `val.json`, we will require image width and height to be specified under `images`. Also, `annotations` are not needed for `test.json`
+> Note that this is different from `test.json` [below](#format-for-test-json-file).
+> 
+> For `train.json` and `val.json`, we will require image width and height to be specified under `images`. Also, `annotations` are not needed for `test.json`
 
 ```
 train.json/
@@ -137,6 +139,8 @@ train.json/
 ```
 
 #### Format for test json file
+
+`teston` should follow the following format:
 
 ```
 train.json/
