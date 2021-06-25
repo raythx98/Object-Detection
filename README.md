@@ -55,8 +55,15 @@ test_dataset.zip
         test.json
 ```
 
-#### Format for training and validation json files
-`train.json` and `val.json` should follow the following format:
+#### Format for image label csv files
+`image_labels.csv` is structured as follows
+```
+filename                        | class
+fake_image/00000/frame00001.jpg | fake
+fake_image/00000/frame10001.jpg | fake
+fake_image/00000/frame20001.jpg | fake
+...
+```
 
 > Note that this is different from `test.json` [below](#format-for-test-json-file).
 > 
