@@ -9,13 +9,12 @@ My implementation makes use of Faster R-CNN model with a ResNet50-FPN backbone. 
 Through robust augmentations and hyperparameter tuning, I was able to achieve a mean Average Precision of 58% on unseen photos.
 
 # Use my implementation
-### Cloning the Repository
-- Install [git](https://git-scm.com/downloads)
-- Visit the repository
-- Copy the link `https://github.com/raythx98/Object-Detection.git` of the repository by clicking on the clone button
-- Open terminal
-- Type `git clone https://github.com/raythx98/Object-Detection.git`
 
+### Downloading my Source Code
+- Visit the [repository](https://github.com/raythx98/Object-Detection)
+- Click on `Objection Detection.ipynb`
+- Click on the download button
+- 
 ### Upload the Jupyter Notebook
 - Upload the Jupyter Notebook to your google drive
 - Note: `/content/drive/MyDrive` is your google drive home directory
